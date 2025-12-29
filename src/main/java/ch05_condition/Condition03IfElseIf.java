@@ -21,7 +21,7 @@ public class Condition03IfElseIf {
         // 사용되는 클래스를 먼저 쓰는 편
         Scanner scanner = new Scanner(System.in);
 
-        //사용되는 변수 / 상수를 선언 및 초기화(하는 경우도 있고 선언만하는 경우도 있고)
+        // 사용되는 변수 / 상수를 선언 및 초기화(하는 경우도 있고 선언만하는 경우도 있고)
         int point;
         // 상수 개념을 처음 설명합니다 -> 얘는 초기화가 필수
         final int VIP_POINT = 100;  // final 키워드가 붙으면 '재대입'이 불가능

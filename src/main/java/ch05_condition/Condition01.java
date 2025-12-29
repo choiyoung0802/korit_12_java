@@ -30,17 +30,17 @@ public class Condition01 {
         // 이상을 봤을 때 변수에 값이 대입되는 순간 이미 19번 라인의 조건식이나 23번 조건식의 true / false
         // 가 결정나는 것으로 보여 굳이 이런 코드가 필요할까, 즉 23번 조건식은 없어도 되지 않나 싶을 수 있습니다.
 
-        System.out.println("숫자를 입력하세요 >>> ");
+        System.out.print("숫자를 입력하세요 >>> ");
         Scanner scanner = new Scanner(System.in);
 
         int num2 = scanner.nextInt();
 
-        if (num1 > 0) {
-            System.out.println("num1은 양수입니다.");
+        if (num2 > 0) {
+            System.out.println("num2는 양수입니다.");
         }
 
-        if (num1 > 15) {
-            System.out.println("num1은 15 초과입니다.");
+        if (num2 > 15) {
+            System.out.println("num2는 15 초과입니다.");
         }
 
     }

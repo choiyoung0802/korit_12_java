@@ -24,6 +24,6 @@ public class Method02 {
             System.out.print((i+1) + " 과목의 점수를 입력하세요 >>> ");
             sum += scanner.nextDouble();
         }
-        System.out.println("총합은 " + sum + "이며, 평균은 " + (sum/numOfSubs) + "입니다.");
+        System.out.println("총합은 " + sum + "이며, 평균은 " + (sum / numOfSubs) + "입니다.");
     }
 }
