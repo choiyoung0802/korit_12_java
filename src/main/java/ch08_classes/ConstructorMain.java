@@ -8,5 +8,20 @@ public class ConstructorMain {
         // 아까 전에는 myCar 객체를 생성하고 그 다음에 빨강이라는 값을 color에 대입했습니다.
         // 근데 잘 생각해보면 만들면서 곧장 color는 빨강이라고 지정할 수 없는건가에 해당하는겁니다.
         // Car myCar = new Car("빨강");
+        Constructor constructor3 = new Constructor(3);
+        System.out.println(constructor3.num);
+
+        // 지시사항 # 1 객체 생성
+        Constructor constructor4 = new Constructor("김사"); // 여기서 "김사"는 argument
+        // name은 field / title은 parameter / "김사"는 argument
+        // 근데 field를 name으로 잡았을 때, 매개변수를 name 으로 잡아버리면
+        // this.name = name; 형태로 작성됨.
+        System.out.println(constructor4.name);
+
+        Constructor constructor5 = new Constructor(5, "김오");
+        System.out.println(constructor5.num);
+        System.out.println(constructor5.name);
+        constructor5.displayInfo();
+
     }
 }
