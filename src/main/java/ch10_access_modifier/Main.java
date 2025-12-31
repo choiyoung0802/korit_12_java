@@ -12,6 +12,8 @@ class AccessModifierExample { // 간판 클래스는 public이 명시돼야 함.
     }
 }
 
+
+
 public class Main {
     public static void main(String[] args) {
         // 객체 생성 : default class니까 객체 생성이 가능하겠네요.
@@ -24,3 +26,7 @@ public class Main {
         System.out.println(example.getPrivateVar());
     }
 }
+
+
+
+
