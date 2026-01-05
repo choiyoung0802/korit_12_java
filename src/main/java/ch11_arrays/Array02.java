@@ -28,16 +28,16 @@ public class Array02 {
         int num = scanner.nextInt();
         scanner.nextLine();
         String[] humans = new String[num];
-        for (int i = 0 ; i < humans.length ; i++) {
-            System.out.print(i+1 + "번 학생의 이름을 등록하세요 >>> ");
+        for (int i = 0 ; i < humans.length ; i++) { // 여기 humans.length 말고 num 넣어도 됨
+            System.out.print((i+1) + "번 학생의 이름을 등록하세요 >>> ");
             humans[i] = scanner.nextLine();
-        } // 미쳤다 너무어렵다 이게 맞나 ..
+        } // 미쳤다 너무어렵다 이게 맞나
         // 아니 존나 열심히 공부해야지 이게 맞아.
         System.out.println();
         double[] scores = new double[num];
         double sum = 0;
-        for (int i = 0 ; i < scores.length ; i++) {
-            System.out.print(i+1 + "번 학생의 점수를 입력하세요 >>> ");
+        for (int i = 0 ; i < scores.length ; i++) { // 여기 scores.length 말고 num 넣어도 됨
+            System.out.print((i+1) + "번 학생의 점수를 입력하세요 >>> ");
             scores[i] = scanner.nextDouble();
             sum += scores[i];
         }
