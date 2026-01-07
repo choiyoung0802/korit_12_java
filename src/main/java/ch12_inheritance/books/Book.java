@@ -70,7 +70,7 @@ public class Book {
     }
 
     public void showInfo() {
-        System.out.println("제목 : " + getTitle());
-        System.out.println("저자 : " + getAuthor());
+        System.out.println("제목 : " + title);
+        System.out.println("저자 : " + author);
     }
 }
