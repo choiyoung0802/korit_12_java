@@ -177,15 +177,19 @@ public class CentralControl {
         System.out.println(deviceDelete + " 번째 기기가 제거됨");
         deviceArray[deviceDelete -1] = null;
     }
-    public void deleteDevice(String deviceDelete) {
-        if (deviceDelete == null) {
-            return;
-        }
 
-        for (int i = 0; i < deviceArray.length; i++) {
-            if (deviceDelete.equals(deviceArray[i])) {
-                System.out.println(deviceDelete + " ");
-                deleteDevice(i); // index 삭제 로직 재사용
+//    public void deleteDevice2(int slot) {
+//        int i = slot-1;
+//        System.out.println(deviceArray[i].getClass().getSimpleName() + "을(를) 삭제했습니다.");
+//        deviceArray[i] = null;
+//    }
+
+    public void deleteDevice(String deviceName) {
+        for (int i = 0 ; i < deviceArray.length ; i++) {
+            if (deviceArray[i] == null) continue;
+            else if (deviceName.equals(deviceArray[i].getClass().getSimpleName())) {
+                System.out.println(deviceArray[i].getClass().getSimpleName() + "을(를) 삭제했습니다.");
+                deviceArray[i] = null;
                 return;
             }
         }
