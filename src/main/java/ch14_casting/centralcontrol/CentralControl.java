@@ -1,11 +1,8 @@
 package ch14_casting.centralcontrol;
 
-import java.util.Scanner;
-
 public class CentralControl {
     // field 선언
     private Power[] deviceArray;
-    Scanner scanner = new Scanner(System.in);
     public CentralControl(Power[] deviceArray) {
         this.deviceArray = deviceArray;
     }

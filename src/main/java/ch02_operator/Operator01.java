@@ -66,7 +66,7 @@ public class Operator01 {
         int j = 10;
         System.out.println(j);
         System.out.println(j++);    // 변수명++ : 코드를 실행시킨 후에 j에 1을 더함 / 그래서 10
-        System.out.println(j);
+        System.out.println(j);      // 얘는 11
         System.out.println(++j);    // ++변수명 : 코드를 실행시키기 전에 j에 1을 더함 / 그래서 12
         System.out.println(j);      // 그럼 얘는 바뀔 일이 없으니까 12
         System.out.println(j--);    // 변수명-- : 코드를 실행시킨 후에 j에 1을 감함 / 그래서 12
