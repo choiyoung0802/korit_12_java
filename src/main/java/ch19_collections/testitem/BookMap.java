@@ -59,10 +59,7 @@ public class BookMap {
         int newNum;
         while (true) {
             System.out.println("---도서 재고 관리 프로그램---");
-            System.out.println("1. 도서 추가");
-            System.out.println("2. 재고 수정");
-            System.out.println("3. 재고 목록");
-            System.out.println("4. 종료");
+            System.out.println("1. 도서추가\n2. 재고 수정\n3. 재고 목록\n4. 종료");
             System.out.print("메뉴를 선택하세요 >>> ");
             int choice = scanner.nextInt();
             scanner.nextLine();
@@ -95,14 +92,13 @@ public class BookMap {
                 case 3:
                     System.out.println("---현재 재고 목록---");
                     for (Map.Entry<String, Integer> boo : book.entrySet()) {
-                        System.out.println("도서명 : " + boo.getKey() + ", 재고 수량 : " + boo.getValue());
+                        System.out.println("도서명 : " + boo.getKey() + ", 재고 수량 : " + boo.getValue() + "권");
                     }
                     break;
                 case 4:
                     System.out.println("프로그램을 종료합니다.");
-                    break;
+                    return;
             }
-            if (choice == 4)break;
         }
     }
 }
